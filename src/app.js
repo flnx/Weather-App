@@ -4,6 +4,7 @@ import { showSearchBar } from './searchBar.js';
 import { showCityResult } from './cityResult.js';
 
 page(ctxDecorator);
+page('/index.html/', '/');
 page('/', showSearchBar);
 page('/r/', showCityResult);
 page.start();

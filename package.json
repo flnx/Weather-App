@@ -1,0 +1,20 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "Desktop 1                  |  Mobile 1\r :-------------------------:|:-------------------------:\r ![](./intro/desktop.png)   |  ![](./intro/mobile.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flnx/Weather-App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flnx/Weather-App/issues"
+  },
+  "homepage": "https://github.com/flnx/Weather-App#readme"
+}
