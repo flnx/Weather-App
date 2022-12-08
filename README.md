@@ -1,4 +1,5 @@
-# Weather App Live DEMO at https://minimalistic-weather-app.web.app/
+# Weather App
+### Live DEMO at https://minimalistic-weather-app.web.app/
  
 Desktop                    |  Mobile
 :-------------------------:|:-------------------------:
