@@ -1,0 +1,169 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background-image: url('/images/minimalist-landscape-horizon-b464.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  overflow: hidden;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  color: #fff;
+}
+
+a {
+  color: #fff;
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 2.8rem;
+  margin-bottom: 0.3rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  padding: 11rem .2rem .2rem .2rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+main,
+section {
+  width: 100%;
+}
+
+section {
+  padding: 1.3rem;
+  background: rgba(0, 0, 0, 0.356);
+  border-radius: 2px;
+}
+
+.search {
+  margin-top: 1rem;
+  position: relative;
+  display: flex;
+}
+
+.searchField {
+  width: 100%;
+  border: 1.5px solid #432d48;
+  border-right: none;
+  padding: 1.5rem 1.5rem 1.5rem 0.5rem;
+  height: 30px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9dbfaf;
+}
+
+.searchField:hover,
+:focus {
+  color: #3d7494;
+}
+
+.searchButton {
+  padding: 0 0.8rem;
+  border: 1px solid #432d48;
+  background: #432d48;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.result {
+  display: flex;
+  gap: 1rem;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+}
+
+.card-header {
+  min-width: 10rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-header a {
+  position: absolute;
+  font-size: 1.5rem;
+  top: 5rem;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body a {
+  font-size: 1.3rem;
+}
+
+.degrees {
+  color: #fff;
+  font-weight: 600;
+  font-size: 2.8rem;
+}
+
+@media (min-width: 600px) {
+  main,
+  section {
+    width: 35rem;
+  }
+
+  .degrees {
+    font-size: 3rem;
+  }
+
+  .card {
+    gap: 4rem;
+  }
+
+
+}
