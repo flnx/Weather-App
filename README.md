@@ -1,5 +1,6 @@
 # Weather App
+### Live DEMO at https://minimalistic-weather-app.web.app/
  
-Desktop 1                  |  Mobile 1
+Desktop                    |  Mobile
 :-------------------------:|:-------------------------:
 ![](./intro/desktop.png)   |  ![](./intro/mobile.png) 
