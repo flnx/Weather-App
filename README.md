@@ -1,5 +1,5 @@
 # Weather App
  
-Desktop 1                  |  Mobile 1
+Desktop                    |  Mobile
 :-------------------------:|:-------------------------:
 ![](./intro/desktop.png)   |  ![](./intro/mobile.png) 
