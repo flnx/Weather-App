@@ -123,7 +123,7 @@ section {
 }
 
 .card-header {
-  min-width: 10rem;
+  width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -168,5 +168,9 @@ section {
   .card {
     gap: 4rem;
     flex-direction: row;
+  }
+
+  .card-header {
+    width: 10rem;
   }
 }
