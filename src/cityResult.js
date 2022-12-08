@@ -18,14 +18,17 @@ export const showCityResult = async (ctx) => {
   }
 
   const currentTime = ctx.getTime(data.timezone);
+  const hour = currentTime.time.substring(0, 5)
+
+
   const iconPath = ctx.checkWeatherCode(data.weather[0].id, currentTime.time);
 
-  ctx.render(searchTemplate(data, iconPath));
+  ctx.render(searchTemplate(data, iconPath, hour));
 };
 
 const loadingTemplate = () => html`<p>Loading...</p>`;
 
-export const searchTemplate = (city, iconPath) => {
+export const searchTemplate = (city, iconPath, hour) => {
   return html` <section>
     <h2>Current Weather in ${city.name}</h2>
     <div class="result">
@@ -39,6 +42,7 @@ export const searchTemplate = (city, iconPath) => {
           <a class="feels-like">Feels like: ${city.main.feels_like} &#8451;</a>
           <a class="humidity">Humidity: ${city.main.humidity}%</a>
           <a class="wind">Wind: ${city.wind.speed}km/h</a>
+          <a class="time">Time: ${hour}</a>
         </div>
       </div>
     </div>
