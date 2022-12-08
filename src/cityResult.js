@@ -16,11 +16,13 @@ export const showCityResult = async (ctx) => {
   if (typeof data != 'object') {
     return ctx.render(notFoundTemplate(data));
   }
-
+  // calculating the region time
   const currentTime = ctx.getTime(data.timezone);
+  
+  // current hour
   const hour = currentTime.time.substring(0, 5)
 
-
+  // getting the correct weather svg icon
   const iconPath = ctx.checkWeatherCode(data.weather[0].id, currentTime.time);
 
   ctx.render(searchTemplate(data, iconPath, hour));
@@ -30,7 +32,7 @@ const loadingTemplate = () => html`<p>Loading...</p>`;
 
 export const searchTemplate = (city, iconPath, hour) => {
   return html` <section>
-    <h2>Current Weather in ${city.name}</h2>
+   <h2>Current Weather in ${city.name}</h2>
     <div class="result">
       <div class="card">
         <div class="card-header">
