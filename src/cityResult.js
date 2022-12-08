@@ -32,7 +32,7 @@ const loadingTemplate = () => html`<p>Loading...</p>`;
 
 export const searchTemplate = (city, iconPath, hour) => {
   return html` <section>
-   <h2>Current Weather in ${city.name}</h2>
+   <h2>Weather in ${city.name}</h2>
     <div class="result">
       <div class="card">
         <div class="card-header">

@@ -45,8 +45,8 @@ h1 {
 
 h2 {
   text-align: center;
-  font-size: 1.65rem;
-  margin-bottom: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.65rem;
 }
 
 img {
@@ -71,7 +71,7 @@ section {
 section {
   padding: 1.3rem;
   background: rgba(0, 0, 0, 0.356);
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 .search {
@@ -110,9 +110,10 @@ section {
 
 .card {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
   width: 100%;
 }
 
@@ -122,7 +123,7 @@ section {
 }
 
 .card-header {
-  min-width: 8.5rem;
+  min-width: 10rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -131,7 +132,7 @@ section {
 
 .card-header a {
   position: absolute;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   top: 5rem;
 }
 
@@ -141,7 +142,7 @@ section {
 }
 
 .card-body a {
-  font-size: 1.3rem;
+  font-size: 1.25rem;
 }
 
 .degrees {
@@ -150,21 +151,22 @@ section {
   font-size: 2.3rem;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 500px) {
   .container {
     padding-top: 11rem;
   }
 
   main,
   section {
-    width: 35rem;
+    max-width: 35rem;
   }
 
-  .degrees {
-    font-size: 3rem;
+  h2 {
+    font-size: 2.3rem;
   }
 
   .card {
     gap: 4rem;
+    flex-direction: row;
   }
 }
