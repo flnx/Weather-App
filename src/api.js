@@ -1,13 +1,14 @@
-const url = 'https://api.openweathermap.org/data/2.5/weather?q=';
-const API_KEY = '925b8ded1ab2b1878b10051f097bd078';
-
-const endpoints = {
-  city: (city) => `${city}&appid=${API_KEY}&units=metric`,
-};
+const url = 'https://express-proxy-a02q.onrender.com/weather';
 
 const requester = async (method, city) => {
   try {
-    const res = await fetch(url + endpoints.city(city));
+    const res = await fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ city }),
+    });
 
     if (res.ok) {
       return res.json();
