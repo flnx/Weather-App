@@ -1,5 +1,5 @@
 # Weather App
-### Live DEMO at https://minimalistic-weather-app.web.app/
+### Live DEMO at [Minimalistic Weather App](https://weather-forecast-b59e4.web.app/)
 
 Works in almost all languages
  
