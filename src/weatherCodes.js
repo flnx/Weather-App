@@ -1,7 +1,6 @@
 const SUNRISE = 6;
 const SUNSET = 17;
 
-
 export const checkWeatherCode = (id, time) => {
   let path = null;
 
