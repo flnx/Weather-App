@@ -1,4 +1,4 @@
-const url = 'https://express-proxy-a02q.onrender.com/weather';
+const url = 'https://basic-express-api-handler.fly.dev/weather';
 
 const requester = async (method, city) => {
   try {
